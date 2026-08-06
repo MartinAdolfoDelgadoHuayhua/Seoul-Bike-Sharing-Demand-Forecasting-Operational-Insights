@@ -63,19 +63,6 @@ seoul-bike-demand-forecast/
     ├── model_results.csv
     └── feature_importance.csv
 ```
-
-## ▶️ Cómo correrlo
-
-```bash
-git clone <este-repo>
-cd seoul-bike-demand-forecast
-python -m venv venv && source venv/bin/activate      # o el gestor de entornos que prefieras
-pip install -r requirements.txt
-jupyter notebook notebooks/01_bike_demand_analysis.ipynb
-```
-
-El notebook es autocontenido: corre de principio a fin sin pasos manuales adicionales, y regenera todas las figuras en `reports/figures/`.
-
 ## 🔬 Metodología (resumen técnico)
 
 - **Calidad de datos:** detección de leakage vía `FunctioningDay` (excluido del modelamiento).
